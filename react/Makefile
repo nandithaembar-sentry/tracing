@@ -2,8 +2,8 @@
 # Following variable must be passed in
 # SENTRY_AUTH_TOKEN
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=admin-javascript
-RELEASE=$(shell ../calver.sh)
+SENTRY_PROJECT=javascript-nans-test
+RELEASE=`sentry-cli releases propose-version`
 PREFIX=static/js
 
 setup_release: create_release associate_commits upload_sourcemaps
