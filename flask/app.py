@@ -13,7 +13,7 @@ import operator
 import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 load_dotenv()
-
+#adding a comment here
 # If you don't set a release in your .env or GCP, it gets defaulted to month.week
 RELEASE = None
 if os.environ.get("RELEASE") is None:
