@@ -3,7 +3,8 @@
 # SENTRY_AUTH_TOKEN
 SENTRY_ORG=testorg-az
 SENTRY_PROJECT=javascript-nans-test
-RELEASE=`sentry-cli releases propose-version`
+RELEASE=489ef29b0aafcfbfca2caaf7dc41513390a1d601
+# RELEASE=`sentry-cli releases propose-version`
 PREFIX=static/js
 
 # setup_release: create_release associate_commits upload_sourcemaps
