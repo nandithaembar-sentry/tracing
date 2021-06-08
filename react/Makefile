@@ -2,7 +2,7 @@
 # Following variable must be passed in
 # SENTRY_AUTH_TOKEN
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=nans-react-local-tracing
+SENTRY_PROJECT=javascript-nans-test
 RELEASE=`sentry-cli releases propose-version`
 PREFIX=static/js
 
