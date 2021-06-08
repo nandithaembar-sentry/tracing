@@ -6,7 +6,7 @@ SENTRY_PROJECT=javascript-nans-test
 RELEASE=`sentry-cli releases propose-version`
 PREFIX=static/js
 
-setup_release: create_release associate_commits upload_sourcemaps
+# setup_release: create_release associate_commits upload_sourcemaps
 
 # create_release:
 # 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(RELEASE)
