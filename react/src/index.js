@@ -25,20 +25,20 @@ const tracingOrigins = [
 ]
 console.log('tracingOrigins', tracingOrigins)
 
-var RELEASE
+var RELEASE = 'e87efd71fde9'
 //for the commit
 // If you don't set a release in your .env, package.json or GCP, it gets defaulted to ${month}.${week}
-if (process.env.REACT_APP_RELEASE == null) {
-  var d = new Date()
-  let adjustedDate = d.getDate()+ d.getDay();
-  let prefixes = ['0', '1', '2', '3', '4', '5'];
-  var week = parseInt(prefixes[0 | adjustedDate / 7])+1
-  let dt = new Date();
-  let month = dt.getMonth() + 1
-  RELEASE = `${month}.${week}`
-} else {
-  RELEASE = process.env.REACT_APP_RELEASE
-}
+// if (process.env.REACT_APP_RELEASE == null) {
+//   var d = new Date()
+//   let adjustedDate = d.getDate()+ d.getDay();
+//   let prefixes = ['0', '1', '2', '3', '4', '5'];
+//   var week = parseInt(prefixes[0 | adjustedDate / 7])+1
+//   let dt = new Date();
+//   let month = dt.getMonth() + 1
+//   RELEASE = `${month}.${week}`
+// } else {
+//   RELEASE = process.env.REACT_APP_RELEASE
+// }
 console.log('RELEASE', RELEASE)
 
 Sentry.init({
