@@ -1,6 +1,6 @@
 SENTRY_ORG=testorg-az
 SENTRY_PROJECT=javascript-nans-test
-RELEASE=ddb85e04f13cbf2a8b948e55a4393e7fc03a182a
+RELEASE=489ef29b0aafcfbfca2caaf7dc41513390a1d601
 #RELEASE=$(shell ./calver.sh)
 PREFIX=static/js
 
