@@ -42,7 +42,7 @@ class ShoppingCart extends Component {
           Sentry.captureException(new Error(response.status + " - " + (response.statusText || "INTERNAL SERVER ERROR")))
           this.setState({ hasError: true, success: false });
 
-          myErrorMethod();
+          this.myErrorMethod();
 
         }
         
