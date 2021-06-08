@@ -150,8 +150,6 @@ class ShoppingCart extends Component {
     }
 }
 
-this.myCodeisNotPerfect();
-
 
 const mapStateToProps = (state, ownProps) => {
     return {
