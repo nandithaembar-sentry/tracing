@@ -41,9 +41,8 @@ class ShoppingCart extends Component {
         if (!response.ok) {
           Sentry.captureException(new Error(response.status + " - " + (response.statusText || "INTERNAL SERVER ERROR")))
           this.setState({ hasError: true, success: false });
-          if(myWorkflow == true) {
-            
-          }
+
+          myErrorMethod();
 
         }
         
