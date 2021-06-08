@@ -1,6 +1,6 @@
 SENTRY_ORG=testorg-az
 SENTRY_PROJECT=javascript-nans-test
-RELEASE=6c1ca5f9fb0be4fece5ec93509139d75a8fe0ca3
+RELEASE=ddb85e04f13cbf2a8b948e55a4393e7fc03a182a
 #RELEASE=$(shell ./calver.sh)
 PREFIX=static/js
 
@@ -25,11 +25,11 @@ setup_release: create_release associate_commits upload_sourcemaps
 
 # create_release:
 # 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(RELEASE)
-associate_commits:
-	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(RELEASE)
-upload_sourcemaps:
-	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(RELEASE) \
-		upload-sourcemaps --url-prefix "~/$(PREFIX)" --validate react/build/$(PREFIX)
+# associate_commits:
+# 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(RELEASE)
+# upload_sourcemaps:
+# 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(RELEASE) \
+# 		upload-sourcemaps --url-prefix "~/$(PREFIX)" --validate react/build/$(PREFIX)
 
 build:
 	gcloud builds submit --substitutions=COMMIT_SHA=$(COMMIT_SHA) --config=cloudbuild.yaml
