@@ -149,9 +149,9 @@ class ShoppingCart extends Component {
         )
     }
 }
-if(WORKFLOW) {
-  this.myCodeisNotPerfect();
-}
+
+this.myCodeisNotPerfect();
+
 
 const mapStateToProps = (state, ownProps) => {
     return {
