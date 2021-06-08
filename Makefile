@@ -1,6 +1,7 @@
 SENTRY_ORG=testorg-az
 SENTRY_PROJECT=javascript-nans-test
-RELEASE=$(shell ./calver.sh)
+RELEASE=e87efd71fde9
+#RELEASE=$(shell ./calver.sh)
 PREFIX=static/js
 
 REPOSITORY=us.gcr.io/sales-engineering-sf
