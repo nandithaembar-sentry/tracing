@@ -15,7 +15,7 @@ from sentry_sdk.integrations.flask import FlaskIntegration
 load_dotenv()
 #adding a comment here
 # If you don't set a release in your .env or GCP, it gets defaulted to month.week
-RELEASE = None
+RELEASE = '489ef29b0aafcfbfca2caaf7dc41513390a1d601'
 if os.environ.get("RELEASE") is None:
     d=datetime.date.today()
     week=str((d.day-1)//7+1)

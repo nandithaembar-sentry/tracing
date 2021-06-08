@@ -25,7 +25,7 @@ const tracingOrigins = [
 ]
 console.log('tracingOrigins', tracingOrigins)
 
-var RELEASE = 'e87efd71fde9'
+var RELEASE = '489ef29b0aafcfbfca2caaf7dc41513390a1d601'
 //for the commit
 // If you don't set a release in your .env, package.json or GCP, it gets defaulted to ${month}.${week}
 // if (process.env.REACT_APP_RELEASE == null) {
