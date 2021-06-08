@@ -21,7 +21,7 @@ docker_compose:
 build_react:
 	cd react && source $(HOME)/.nvm/nvm.sh && nvm use && npm install && npm run build
 
-setup_release: create_release associate_commits upload_sourcemaps
+# setup_release: create_release associate_commits upload_sourcemaps
 
 # create_release:
 # 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(RELEASE)
