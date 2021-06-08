@@ -1,5 +1,5 @@
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=javascript-nans-test
+SENTRY_PROJECT=nans-react-local-tracing
 RELEASE=$(shell ./calver.sh)
 PREFIX=static/js
 
